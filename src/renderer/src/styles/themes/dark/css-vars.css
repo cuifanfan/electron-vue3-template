@@ -1,0 +1,8 @@
+html.dark {
+    /*头部导航栏公共颜色*/
+    --header-bg-color: #121212;
+    --header-text-color: #fff;
+    --header-hover-bg-color: rgba(255, 255, 255, 0.2);
+
+    --main-bg-color: #121212;
+}

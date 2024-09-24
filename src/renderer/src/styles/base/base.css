@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Alibaba-PuHuiTi-Regular';
+    src: url('../fonts/Alibaba-PuHuiTi-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'AlibabaPuHuiTi-Black';
+    src: url('../fonts/AlibabaPuHuiTi-Black.ttf');
+}
+
+@font-face {
+    font-family: 'DingTalk-JinBuTi.ttf';
+    src: url('../fonts/DingTalk-JinBuTi.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Alibaba-PuHuiTi-Regular;
+}

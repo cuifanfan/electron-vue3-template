@@ -1,0 +1,20 @@
+import './styles/base/base.css';
+import 'element-plus/theme-chalk/dark/css-vars.css';
+import './styles/themes/dark/css-vars.css';
+import './styles/themes/light/css-vars.css';
+import { createApp } from 'vue';
+import App from './App.vue';
+import i18n from './common/i18n';
+import router from './router';
+import { createPinia } from 'pinia';
+import echarts from './common/lib/echarts';
+import './common/utils/flexible';
+
+const pinia = createPinia();
+const app = createApp(App);
+app.config.globalProperties.$echarts = echarts;
+app.provide('$echarts', echarts);
+app.use(pinia);
+app.use(router);
+app.use(i18n);
+app.mount('#app');
