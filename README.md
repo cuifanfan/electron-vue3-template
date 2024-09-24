@@ -1,5 +1,17 @@
 # Electron
 
+Electron project template based on Vue3 according to Web group code specification.
+
+Technology stack:
+
+- Frameworks: vue3, electron
+- Routing: vue-router4
+- Component library: elementPlus
+- State management: pinia, custom hooks
+- Utility libraries: lodash, eCharts, axios, Tailwind CSS, less, vue-i18n
+- Build tools: electron_vite, eslint, prettier, husky
+- Package managers: pnpm, (monorepo)
+
 依据 Web 组代码规范搭建的基于 Vue3 的 Electron 项目模板。
 
 技术栈：
@@ -37,11 +49,11 @@ $ pnpm dev
 
 ### Before Coding
 
-确保编辑器正确配置`ESlint`、`Prettier`,
+Make sure your editor is properly configured with `ESlint` and `Prettier`, `Ctrl + S` to format your code during development, `Control + Shift + I` to open the console, and `Control + R` to refresh the page.
 
-<img src="./docs/images/eslint-ws.png" style="zoom:45%;" /> <img src="./docs/images/prettier-ws.png" style="zoom:45%;" />
+确保编辑器正确配置`ESlint`、`Prettier`,`Ctrl + S`可在开发阶段格式化代码，`Control + Shift + I`打开控制台，`Control + R`刷新页面。
 
-`Ctrl + S`可在开发阶段格式化代码，`Control + Shift + I`打开控制台，`Control + R`刷新页面。
+<img src="https://github.com/cuifanfan/electron-vue3-template/tree/master/docs/images/eslint-ws.png" style="zoom:45%;" /> <img src="https://github.com/cuifanfan/electron-vue3-template/tree/master/docs/images/prettier-ws.png" style="zoom:45%;" />
 
 ### Before Commit
 
@@ -101,8 +113,10 @@ $ git config core.autocrlf false
 $ git config --global core.autocrlf false
 ```
 
-### 2. 打包时卡在`transforming`
+### 2. Stuck in 'transforming' when bundling
+
+This is usually caused by a dependency file not being copied in (accessed without permission or installed in development).
 
 出现这种问题通常是依赖文件没能拷贝进去（无权限访问或者安装到了开发环境）。
 
-![image-20240924152851751](./docs/images/powershell.png)
+![image-20240924152851751](https://github.com/cuifanfan/electron-vue3-template/tree/master/docs/images/powershell.png)
